@@ -11,6 +11,13 @@ understanding of Go module resolution, this approach appears to work as
 intended, but I do not consider it a formally proven or universally recommended
 solution.
 
+> [!CAUTION]
+> Every dependency upgrade can have negative side effects. For this
+> experimental personal module, I try to assess that risk myself, but that
+> assessment may be wrong. Some effects may only show up later in real usage,
+> in areas that are not relevant to my own builds, or only in combination with
+> other Caddy plugins. No warranty or guarantee is provided.
+
 The final Caddy binary should always be verified after every build, for example
 with `go version -m` and a vulnerability scan.
 
@@ -29,6 +36,14 @@ release.
 
 Default behavior is to follow Caddy. Add overrides only for temporary security
 bumps that need to land before Caddy updates.
+
+## Contribution note
+
+This repository is maintained for my own Caddy builds and risk profile.
+
+I may decline pull requests even if they are technically valid, especially when
+they add dependency overrides for issues that do not affect my own use cases or
+when the potential side effects are unclear.
 
 ## Building with xcaddy
 
