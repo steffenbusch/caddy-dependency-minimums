@@ -60,14 +60,9 @@ xcaddy build \
 The `=.` part is important. Without it, `xcaddy` may use a different source
 than your current local checkout.
 
-## Current overrides
-
-- `github.com/go-chi/chi/v5` for `GO-2026-5774`, `GO-2026-5775`, and `GO-2026-5777`, fixed in `v5.3.0`
-- `github.com/klauspost/compress` for `GO-2026-5841`, fixed in `v1.18.7`
-- `go.opentelemetry.io/otel` for `GO-2026-5158`, fixed in `v1.44.0`
-- `google.golang.org/grpc` for `GO-2026-6061`, fixed in `v1.82.1`
-
-For the update and cleanup procedure, see [AGENTS.md](./AGENTS.md).
+Active overrides are documented directly in [overrides.go](./overrides.go),
+including their `govulncheck` references and removal notes. For the update and
+cleanup procedure, see [AGENTS.md](./AGENTS.md).
 
 ## Verifying what is really in the binary
 
