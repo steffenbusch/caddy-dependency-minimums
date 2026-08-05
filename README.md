@@ -1,6 +1,8 @@
 # caddy-dependency-minimums
 
-This repository is a helper module for custom Caddy builds with `xcaddy`.
+This repository is a helper module for custom [Caddy](https://caddyserver.com)
+builds with `xcaddy`. See also the
+[Caddy GitHub repository](https://github.com/caddyserver/caddy).
 
 It provides no Caddy functionality. Its only purpose is to participate in the
 Go module graph so that patched minimum versions for selected dependencies can
@@ -76,3 +78,11 @@ final binary.
 Overrides should be removed once Caddy itself or the normal plugin set already
 pulls in a sufficient version. The cleanup procedure is documented in
 [AGENTS.md](./AGENTS.md).
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
+
+## Acknowledgements
+
+- [Caddy](https://caddyserver.com) for providing a powerful and extensible web server.
