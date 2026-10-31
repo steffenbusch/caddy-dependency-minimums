@@ -4,7 +4,7 @@ go 1.26.5
 
 require (
 	github.com/caddyserver/caddy/v2 v2.11.4
-	github.com/go-chi/chi/v5 v5.3.0
+	github.com/go-chi/chi/v5 v5.4.0
 	github.com/klauspost/compress v1.18.7
 	go.opentelemetry.io/otel v1.44.0
 	google.golang.org/grpc v1.82.1
